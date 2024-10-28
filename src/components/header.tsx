@@ -96,7 +96,7 @@ export default function Header() {
 
 
 {/* cards */}
-<div className="carousel absolute bottom-[10px] z-1 xl:left-[720px] lg:left-[650px] 
+<div className="carousel absolute  z-1 xl:left-[720px] lg:left-[650px] lg:top-[300px] xxs:top-[600px]
  xxs:left-[10px] }">
         <div className="cards-container">
             <div className="card ">
