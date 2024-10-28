@@ -91,7 +91,7 @@ export default function Header() {
 
     
 </section>
-<button className="h-[55px] w-[220px] text-white bg-gradient-to-b from-[#fc4f6c] to-[#e60b87] text-[18px] rounded-[40px] lg: mt-[20px] font-light text-center ml-[200px]  xxs:mt-[20px] sm:ml-[200px]  xxs:ml-[100px]   relative z-1">Let's Get Started </button>
+<button className="h-[55px] w-[220px] text-white bg-gradient-to-b from-[#fc4f6c] to-[#e60b87] text-[18px] rounded-[40px] lg: mt-[20px] font-light text-center ml-[200px]  xxs:mt-[20px] sm:ml-[200px]  xxs:ml-[100px]  relative z-1">Lets Get Started </button>
 
 
 
