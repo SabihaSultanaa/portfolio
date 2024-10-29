@@ -46,28 +46,28 @@ export default function Header() {
             <div className="header max-w-screen-2xl
                            relative z-10 flex
                        
-                            justify-between px-10 
+                            justify-between  
                             items-center
                         
-                        
+     
                     
                       ">
          <h1 className="name-effect  mt-5 
           xxs:text-[30px] 
           xs:text-[40px]
            sm:text-[40px] 
-           md:text-[40px] text-white font-bold " >SABIHA<span className="text-transparent"
+           md:text-[40px] text-white font-bold md:pl-10  xxs:pl-2 xl:text-[50px]" >SABIHA<span className="text-transparent"
                 style={{
                     WebkitTextStroke: '2px #ffffff',
                     fontFamily:'franklin-gothic-urw, sans-serif'
                 
                 }}>SULTANA</span></h1>
-                <ul className="flex gap-10 hidden  lg:flex lg:block lg:gap-7  text-white text-xl mt-4 cursor-pointer"><li><Link href="/">Home</Link></li>
+                <ul className="flex gap-10 hidden  lg:flex lg:block lg:gap-7  text-white text-xl mt-4 cursor-pointer lg:pr-10"><li><Link href="/">Home</Link></li>
                 <li> <Link href="/about">About</Link></li>
                 <li><Link href="/about">Contact</Link></li> 
                 <li><Link href="/about">Services</Link></li>
                 <li><Link href="/about">Pricing</Link></li></ul><Sheet>
-  <SheetTrigger className="block lg:hidden"><Menu className="mt-5 text-white xxs:w-8 xxs:h-8 xs:w-10 xs:h-10 md:w-10 md:h-10" /></SheetTrigger>
+  <SheetTrigger className="block lg:hidden md:pr-10 xxs:pr-2"><Menu className="mt-5 text-white xxs:w-8 xxs:h-8 xs:w-10 xs:h-10 md:w-10 md:h-10" /></SheetTrigger>
   <SheetContent>
     <SheetHeader>
       <SheetTitle>Are you absolutely sure?</SheetTitle>
@@ -80,23 +80,28 @@ export default function Header() {
 </Sheet>
 
            </div>
-           <section className=" lg:mt-[120px] sm:w-[500px] relative z-1 2xl:ml-[150px] xl:ml-[150px] lg:ml-[80px] md:ml-[50px]
-            xxs:ml-[30px]  sm:mt-[20px]   xxs: mt-[15px]  ">
+           <section className=" md:mt-[120px] relative z-1 2xl:ml-[150px] xl:ml-[150px] md:ml-[10px] 
+            xxs:pl-[30px]   xxs: mt-[15px] xxs:w-[250px]  xxs:mt-[50px] md:w-[300px]">
 
-<h1 className="text-white lg:text-[68px] lg:leading-[80px] font-bold sm:text-[50px] xxs:text-[40px] xxs:leading-[60px] " style={{fontFamily:'franklin-gothic-urw, sans-serif'}}> I Provide Flexible  <h1 ref={autoTypeRef} className="auto-type inline"> </h1> <span className="auto-type"></span> Solutions
- <p className=" text-[20px] mt-[20px] font-light leading-[35px] "style={{fontFamily:'franklin-gothic-urw, sans-serif'}}>
+<h1 className="text-white md:text-[58px] md:leading-[60px] font-bold  xxs:text-[30px] xxs:leading-[32px] " style={{fontFamily:'franklin-gothic-urw, sans-serif'}}>
+     I Provide Flexible  <h1 ref={autoTypeRef} className="auto-type inline"> </h1> <span className="auto-type"></span> Solutions
+ <p className=" text-[20px] mt-[20px] font-light md:leading-[35px] xxs:w-[300px]  xxs:leading-[25px] xxs:pr-5 md:w-[400px]"style={{fontFamily:'franklin-gothic-urw, sans-serif'}}>
   Big ideas, tailored solutions. Flexible approaches to meet your unique needs.</p></h1>
  
  
 
     
 </section>
-<button className="h-[55px] w-[220px] text-white bg-gradient-to-b from-[#fc4f6c] to-[#e60b87] text-[18px] rounded-[40px] lg: mt-[20px] font-light text-center ml-[200px]  xxs:mt-[20px] sm:ml-[200px]  xxs:ml-[100px]  relative z-1">Lets Get Started </button>
+<button className="h-[55px] w-[220px] text-white
+ bg-gradient-to-b from-[#fc4f6c] to-[#e60b87] 
+ text-[18px] rounded-[40px] 
+ md: mt-[20px] font-light text-center md:ml-[35px] 
+  xxs:mt-[20px]  xl:ml-[180px]  relative z-1 xxs:ml-[20px] ">Lets Get Started </button>
 
 
 
 {/* cards */}
-<div className="carousel absolute  z-1 xl:left-[720px] lg:left-[650px] lg:top-[300px] xxs:top-[600px]
+<div className="carousel absolute  z-1 xl:left-[720px] md:left-[470px] md:top-[300px] xxs:top-[450px]
  xxs:left-[10px] }">
         <div className="cards-container">
             <div className="card ">
@@ -215,21 +220,21 @@ export default function Header() {
 
 
 
+   
     // xxs:bg-green-500
     // xs:bg-yellow-500
     // sm:bg-red-500
     // md:bg-blue-500
     // lg:bg-black
     // xl:bg-purple-500
-    // 2xl:bg-pink-500
+    // 2xl:bg-pink-500 
+
+
+
+
+
+
+
+
+
    
-
-
-
-
-
-
-
-
-
-//    

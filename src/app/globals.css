@@ -99,23 +99,19 @@
       height: 360px;
       margin: 10px;
       border: 1px solid rgb(205, 190, 190);
-
-
-
-
-
 background: rgba(255, 255, 255, 0.1); /* 10% opaque white background */
 backdrop-filter: blur(10px);
 border-radius: 30px;
-
 }
+
+/* .cimg{@apply bg-red-600 xxs:w-[10px] xxs:h-[10px] xxs:absolute xxs:top-[0px] xxs:bg-contain xxs:bg-center xxs:bg-no-repeat}  */
 .cimg1{background-image: url(../app/Best_Web_Design_Company___Marketing_Services___Designixer_Web_Design_Agency_-_Google_Chrome_10_24_2024_9_12_03_AM-removebg-preview.png);background-position: center center;background-repeat: no-repeat;background-size: contain ;height: 400px;width: 200px;}
 .cimg2{background-image: url(../app/Best_Web_Design_Company___Marketing_Services___Designixer_Web_Design_Agency_-_Google_Chrome_10_24_2024_9_12_10_AM-removebg-preview.png);background-position: center center;background-repeat: no-repeat;background-size: contain ;height: 400px;width: 200px;}
 .cimg3{background-image: url(../app/Best_Web_Design_Company___Marketing_Services___Designixer_Web_Design_Agency_-_Google_Chrome_10_24_2024_9_16_34_AM-removebg-preview.png);background-position: center center;background-repeat: no-repeat;background-size: contain ;height: 400px;width: 200px;}
 .cimg4{background-image: url(../app/Best_Web_Design_Company___Marketing_Services___Designixer_Web_Design_Agency_-_Google_Chrome_10_24_2024_9_42_23_AM-removebg-preview.png);background-position: center center;background-repeat: no-repeat;background-size: contain ;height: 400px;width: 200px;
 margin-top: 0px;position: absolute;bottom: 90px;left: 10px;}
 .cimg{margin-top: 0px;position: absolute;bottom: 30px;left: 10px;}
-.ctext1{color: white;font-size: 22px;width: 100px;margin-top: 270px;margin-left: 20px;font-family: Arial, Helvetica, sans-serif;font-weight: bold;}
+.ctext1{color: white;font-size: 22px;width: 100px;margin-top: 270px;margin-left: 40px;font-family: Arial, Helvetica, sans-serif;font-weight: lighter;}
 .cards-container {
 animation: slideCards 60s infinite linear;
 }
@@ -128,4 +124,18 @@ animation: slideCards 60s infinite linear;
   transform: translateX(-100%);
 }
 }
+
+@media (max-width: 767px) {
+  .cimg1{background-image: url(../app/Best_Web_Design_Company___Marketing_Services___Designixer_Web_Design_Agency_-_Google_Chrome_10_24_2024_9_12_03_AM-removebg-preview.png);background-position: center center;
+    background-repeat: no-repeat;background-size: contain ;height: 150px;width: 150px;}
+    .cimg2{background-image: url(../app/Best_Web_Design_Company___Marketing_Services___Designixer_Web_Design_Agency_-_Google_Chrome_10_24_2024_9_12_10_AM-removebg-preview.png);background-position: center center;background-repeat: no-repeat;background-size: contain ;height: 150px;width: 150px;}
+.cimg3{background-image: url(../app/Best_Web_Design_Company___Marketing_Services___Designixer_Web_Design_Agency_-_Google_Chrome_10_24_2024_9_16_34_AM-removebg-preview.png);background-position: center center;background-repeat: no-repeat;background-size: contain ;height: 150px;width: 150px;}
+.cimg4{background-image: url(../app/Best_Web_Design_Company___Marketing_Services___Designixer_Web_Design_Agency_-_Google_Chrome_10_24_2024_9_42_23_AM-removebg-preview.png);background-position: center center;background-repeat: no-repeat;background-size: contain ;height: 150px;width: 150px;
+}
+.ctext1{color: white;font-size: 20px;width: 100px;margin-top: 150px;font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;line-height: normal;text-align: center;}
+.cimg{margin-top: 0px;bottom: 68px; position: absolute;}
+.card{width:160px; height: 220px;}
+}
+
 
