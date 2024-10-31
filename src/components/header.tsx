@@ -1,5 +1,6 @@
 "use client"
 import Link from "next/link";
+
 import {
     Sheet,
     SheetContent,
@@ -8,7 +9,9 @@ import {
     SheetTitle,
     SheetTrigger,
   } from "@/components/ui/sheet"
+
 import { Menu } from "lucide-react";
+
 import { useEffect, useRef } from 'react';
 // first we have to run this command npm install typed.js
 import Typed from 'typed.js';
@@ -36,7 +39,8 @@ export default function Header() {
 
 
     return (
-        <div className="bubble-container h-screen w-full relative z-[-1] bg-gradient-to-b from-[#26085d] to-[#031b68] overflow-hidden">
+        <>
+        <div className="bubble-container h-screen w-full relative z-1 bg-gradient-to-b from-[#26085d] to-[#031b68] overflow-hidden">
             <div className="bubble bubble1"></div>
             <div className="bubble bubble2"></div>
             <div className="bubble bubble3"></div>
@@ -45,13 +49,7 @@ export default function Header() {
             <div className="bubble bubble6"></div>
             <div className="header max-w-screen-2xl
                            relative z-10 flex
-                       
-                            justify-between  
-                            items-center
-                        
-     
-                    
-                      ">
+                        justify-between ">
          <h1 className="name-effect  mt-5 
           xxs:text-[30px] 
           xs:text-[40px]
@@ -62,11 +60,13 @@ export default function Header() {
                     fontFamily:'franklin-gothic-urw, sans-serif'
                 
                 }}>SULTANA</span></h1>
-                <ul className="flex gap-10 hidden  lg:flex lg:block lg:gap-7  text-white text-xl mt-4 cursor-pointer lg:pr-10"><li><Link href="/">Home</Link></li>
+                <ul className="flex gap-10 hidden  lg:flex lg:block lg:gap-10  text-white text-xl mt-4 lg:pr-20 lg:mt-10 " >
+                    <li ><Link href="/">Home</Link></li>
                 <li> <Link href="/about">About</Link></li>
                 <li><Link href="/about">Contact</Link></li> 
                 <li><Link href="/about">Services</Link></li>
-                <li><Link href="/about">Pricing</Link></li></ul><Sheet>
+                <li><Link href="/about">Pricing</Link></li></ul>
+                <Sheet>
   <SheetTrigger className="block lg:hidden md:pr-10 xxs:pr-2"><Menu className="mt-5 text-white xxs:w-8 xxs:h-8 xs:w-10 xs:h-10 md:w-10 md:h-10" /></SheetTrigger>
   <SheetContent>
     <SheetHeader>
@@ -101,17 +101,17 @@ export default function Header() {
 
 
 {/* cards */}
-<div className="carousel absolute  z-1 xl:left-[720px] md:left-[470px] md:top-[300px] xxs:top-[450px]
+<div className="carousel absolute  z-1 xl:left-[720px] md:left-[470px] md:top-[300px] xxs:top-[430px]
  xxs:left-[10px] }">
         <div className="cards-container">
             <div className="card ">
                 <div className='cimg1 cimg'></div>
-                <div className='ctext1'>Website Development</div>
+                <div className='ctext1 webd'>Website Development</div>
             </div>
 
             <div className="card">
                  <div className='cimg2 cimg'></div>
-                 <div className='ctext1'>Ecommerce Development</div>
+                 <div className='ctext1 ecom'>Ecommerce Development</div>
             </div>
 
             <div className="card"> 
@@ -204,6 +204,101 @@ export default function Header() {
                 <div className='cimg4 cimg'></div>
                 <div className='ctext1'>Branding Solution</div>
             </div>
+            <div className="card">
+                <div className='cimg1 cimg'></div>
+                <div className='ctext1'>Website Development</div>
+            </div>
+
+            <div className="card">
+                 <div className='cimg2 cimg'></div>
+                 <div className='ctext1'>Ecommerce Development</div>
+            </div>
+
+            <div className="card"> 
+                <div className='cimg3 cimg'></div>
+                <div className='ctext1'>Digital Marketing</div>
+            </div>
+            
+            <div className="card"> 
+                <div className='cimg4 cimg'></div>
+                <div className='ctext1'>Branding Solution</div>
+            </div>
+            <div className="card">
+                <div className='cimg1 cimg'></div>
+                <div className='ctext1'>Website Development</div>
+            </div>
+
+            <div className="card">
+                 <div className='cimg2 cimg'></div>
+                 <div className='ctext1'>Ecommerce Development</div>
+            </div>
+
+            <div className="card"> 
+                <div className='cimg3 cimg'></div>
+                <div className='ctext1'>Digital Marketing</div>
+            </div>
+            
+            <div className="card"> 
+                <div className='cimg4 cimg'></div>
+                <div className='ctext1'>Branding Solution</div>
+            </div>
+            <div className="card">
+                <div className='cimg1 cimg'></div>
+                <div className='ctext1'>Website Development</div>
+            </div>
+
+            <div className="card">
+                 <div className='cimg2 cimg'></div>
+                 <div className='ctext1'>Ecommerce Development</div>
+            </div>
+
+            <div className="card"> 
+                <div className='cimg3 cimg'></div>
+                <div className='ctext1'>Digital Marketing</div>
+            </div>
+            
+            <div className="card"> 
+                <div className='cimg4 cimg'></div>
+                <div className='ctext1'>Branding Solution</div>
+            </div>
+            <div className="card">
+                <div className='cimg1 cimg'></div>
+                <div className='ctext1'>Website Development</div>
+            </div>
+
+            <div className="card">
+                 <div className='cimg2 cimg'></div>
+                 <div className='ctext1'>Ecommerce Development</div>
+            </div>
+
+            <div className="card"> 
+                <div className='cimg3 cimg'></div>
+                <div className='ctext1'>Digital Marketing</div>
+            </div>
+            
+            <div className="card"> 
+                <div className='cimg4 cimg'></div>
+                <div className='ctext1'>Branding Solution</div>
+            </div>
+            <div className="card">
+                <div className='cimg1 cimg'></div>
+                <div className='ctext1'>Website Development</div>
+            </div>
+
+            <div className="card">
+                 <div className='cimg2 cimg'></div>
+                 <div className='ctext1'>Ecommerce Development</div>
+            </div>
+
+            <div className="card"> 
+                <div className='cimg3 cimg'></div>
+                <div className='ctext1'>Digital Marketing</div>
+            </div>
+            
+            <div className="card"> 
+                <div className='cimg4 cimg'></div>
+                <div className='ctext1'>Branding Solution</div>
+            </div>
         </div>
     </div>
     
@@ -215,19 +310,14 @@ export default function Header() {
     <div className="circle1 absolute top-[100px] left-[900px] h-[600px] w-[600px] border-l-2 border-[#5306ec] rounded-full"></div>
 
 
+
         </div>
+        </>
     )}
 
 
 
-   
-    // xxs:bg-green-500
-    // xs:bg-yellow-500
-    // sm:bg-red-500
-    // md:bg-blue-500
-    // lg:bg-black
-    // xl:bg-purple-500
-    // 2xl:bg-pink-500 
+ 
 
 
 
