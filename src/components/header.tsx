@@ -63,17 +63,21 @@ export default function Header() {
                 <ul className="flex gap-10 hidden  lg:flex lg:block lg:gap-10  text-white text-xl mt-4 lg:pr-20 lg:mt-10 " >
                     <li ><Link href="/">Home</Link></li>
                 <li> <Link href="/about">About</Link></li>
-                <li><Link href="/about">Contact</Link></li> 
-                <li><Link href="/about">Services</Link></li>
-                <li><Link href="/about">Pricing</Link></li></ul>
+                <li><Link href="/contact">Contact</Link></li> 
+                <li><Link href="projects">Projects</Link></li>
+            </ul>
                 <Sheet>
   <SheetTrigger className="block lg:hidden md:pr-10 xxs:pr-2"><Menu className="mt-5 text-white xxs:w-8 xxs:h-8 xs:w-10 xs:h-10 md:w-10 md:h-10" /></SheetTrigger>
   <SheetContent>
     <SheetHeader>
-      <SheetTitle>Are you absolutely sure?</SheetTitle>
+      <SheetTitle><ul className="text-[20px]  mt-[50px]">
+                  <li ><Link href="/"  >Home</Link></li>
+              <li> <Link href="/about" >About</Link></li>
+              <li><Link href="/contact">Contact</Link></li> 
+              <li><Link href="projects" >Projects</Link></li>
+           </ul></SheetTitle>
       <SheetDescription>
-        This action cannot be undone. This will permanently delete your account
-        and remove your data from our servers.
+      Feel free to explore my portfolio, and let's discuss how I can help bring your digital vision to life.
       </SheetDescription>
     </SheetHeader>
   </SheetContent>
@@ -101,7 +105,7 @@ export default function Header() {
 
 
 {/* cards */}
-<div className="carousel absolute  z-1 xl:left-[720px] md:left-[470px] md:top-[300px] xxs:top-[430px]
+<div className="carousel absolute  z-1 xl:left-[720px] md:left-[470px] md:top-[300px] xxs:top-[420px]
  xxs:left-[10px] }">
         <div className="cards-container">
             <div className="card ">

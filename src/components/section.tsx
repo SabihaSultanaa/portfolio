@@ -1,12 +1,22 @@
 import Link from "next/link";
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet"
+
+import { Menu } from "lucide-react";
 
 export default function Section() {
     return (
         <>    
-      
-<div className="flex xl:gap-52 lg:gap-10 justify-between xxs:bg-red-500 xs:bg-yellow-500
+      {/* xxs:bg-red-500 xs:bg-yellow-500
  sm:bg-green-500 md:bg-blue-500 lg:bg-purple-500 xl:bg-orange-400
-  2xl:bg-red-300 max-w-screen-2xl ">
+  2xl:bg-red-300 max-w-screen-2xl  */}
+<div className="flex xl:gap-52 lg:gap-10 justify-between ">
         <h1 className="name-effect  
         xxs:text-[30px] 
         xs:text-[40px]
@@ -28,9 +38,29 @@ lg:ml-[0px]
               font-bold text-lg  xl:mt-7 xl:mr-[130px] lg:mr-[80px] mt-7 lg:mt-4 ">
                   <li ><Link href="/"  >Home</Link></li>
               <li> <Link href="/about" >About</Link></li>
-              <li><Link href="/about">Contact</Link></li> 
-              <li><Link href="/about" >Services</Link></li>
-              <li><Link href="/about" >Pricing</Link></li></ul></div>
+              <li><Link href="/contact">Contact</Link></li> 
+              <li><Link href="projects" >Projects</Link></li>
+          </ul>
+              
+              
+              <Sheet>
+  <SheetTrigger className="block lg:hidden md:pr-10 xxs:pr-2"><Menu className="mt-5 text-white xxs:w-8 xxs:h-8 xs:w-10 xs:h-10 md:w-10 md:h-10" /></SheetTrigger>
+  <SheetContent>
+    <SheetHeader>
+      <SheetTitle> <ul className="text-[20px]  mt-[50px]">
+                  <li ><Link href="/"  >Home</Link></li>
+              <li> <Link href="/about" >About</Link></li>
+              <li><Link href="/contact">Contact</Link></li> 
+              <li><Link href="projects" >Projects</Link></li>
+            
+              </ul></SheetTitle>
+      <SheetDescription>
+      Feel free to explore my portfolio, and let's discuss how I can help bring your digital vision to life.
+      </SheetDescription>
+    </SheetHeader>
+  </SheetContent>
+</Sheet>
+              </div>
               <div className="h-[6px] bg-gradient-to-r from-[#4545b0] to-[#5d81f5] w-full absolute top-[65px]">
             
               </div>
@@ -54,7 +84,7 @@ lg:ml-[0px]
         </div>
         <aside className="bg-gradient-to-b from-[#26085d] to-[#031b68] md:w-[500px] lg:ml-[330px] 
           xl:h-[240px] lg:h-[600px] text-white xl:w-[1160px] 
-          2xl:ml-[190px]  xl:ml-[100px] rounded-[10px] absolute lg:top-[500px] xl:top-[480px]  xxs:h-[600px]  xxs:ml-[100px] xxs:mt-[30px]">
+          2xl:ml-[190px]  xl:ml-[100px] rounded-[10px] absolute lg:top-[500px] xl:top-[460px]  xxs:h-[600px]  xxs:ml-[100px] xxs:mt-[30px]">
         <h1 className="text-[30px] ml-10 mt-[12px] font-bold">Proficiencies</h1>
           <div className="flex lg:flex-col xl:flex-row  xxs:flex-col xxs:h-[410px] xxs:gap-[20px] xl:gap-[0px]">
          

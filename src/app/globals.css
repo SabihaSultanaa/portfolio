@@ -69,43 +69,45 @@
   }
 
 }
-/* @layer base {
-  :root {--background:0 0% 100%;--foreground:222.2 84% 4.9%;--card:0 0% 100%;--card-foreground:222.2 84% 4.9%;--popover:0 0% 100%;--popover-foreground:222.2 84% 4.9%;--primary:222.2 47.4% 11.2%;--primary-foreground:210 40% 98%;--secondary:210 40% 96.1%;--secondary-foreground:222.2 47.4% 11.2%;--muted:210 40% 96.1%;--muted-foreground:215.4 16.3% 46.9%;--accent:210 40% 96.1%;--accent-foreground:222.2 47.4% 11.2%;--destructive:0 84.2% 60.2%;--destructive-foreground:210 40% 98%;--border:214.3 31.8% 91.4%;--input:214.3 31.8% 91.4%;--ring:222.2 84% 4.9%;--chart-1:12 76% 61%;--chart-2:173 58% 39%;--chart-3:197 37% 24%;--chart-4:43 74% 66%;--chart-5:27 87% 67%;--radius:0.5rem;}
-  .dark {--background:222.2 84% 4.9%;--foreground:210 40% 98%;--card:222.2 84% 4.9%;--card-foreground:210 40% 98%;--popover:222.2 84% 4.9%;--popover-foreground:210 40% 98%;--primary:210 40% 98%;--primary-foreground:222.2 47.4% 11.2%;--secondary:217.2 32.6% 17.5%;--secondary-foreground:210 40% 98%;--muted:217.2 32.6% 17.5%;--muted-foreground:215 20.2% 65.1%;--accent:217.2 32.6% 17.5%;--accent-foreground:210 40% 98%;--destructive:0 62.8% 30.6%;--destructive-foreground:210 40% 98%;--border:217.2 32.6% 17.5%;--input:217.2 32.6% 17.5%;--ring:212.7 26.8% 83.9%;--chart-1:220 70% 50%;--chart-2:160 60% 45%;--chart-3:30 80% 55%;--chart-4:280 65% 60%;--chart-5:340 75% 55%;}}
-@layer base {
-  * {
-    @apply border-border;}
-  body {
-    @apply bg-background text-foreground;}} */
-    .typed-cursor {
+
+.typed-cursor {
+  @apply hidden;
+}
+
+    /* .typed-cursor {
      display: none;
     
-    }
-    .carousel {
+    } */
+    /* .carousel {
       overflow: hidden;
       width: 10000px;
-       /* Width of the visible area */
-    
-    
-  }
+   } */
+    /* In your global CSS file */
+.carousel {
+  @apply overflow-hidden;
+  width: 10000px; /* Tailwind doesn't have a utility for 10000px, so you must keep this custom */
+}
+
   
-  .cards-container {
-      display: flex;
-      /* transition: transform 0.5s ease; */
-  }
+  .cards-container {@apply flex }
  
 
 
 /* .cimg{@apply bg-red-600 xxs:w-[10px] xxs:h-[10px] xxs:absolute xxs:top-[0px] xxs:bg-contain xxs:bg-center xxs:bg-no-repeat}  */
-.cimg1{background-image: url(../app/Best_Web_Design_Company___Marketing_Services___Designixer_Web_Design_Agency_-_Google_Chrome_10_24_2024_9_12_03_AM-removebg-preview.png);background-position: center center;background-repeat: no-repeat;background-size: contain ;height: 400px;width: 200px;}
-.cimg2{background-image: url(../app/Best_Web_Design_Company___Marketing_Services___Designixer_Web_Design_Agency_-_Google_Chrome_10_24_2024_9_12_10_AM-removebg-preview.png);background-position: center center;background-repeat: no-repeat;
-  background-size: contain ;height: 400px;width: 200px;}
-.cimg3{background-image: url(../app/Best_Web_Design_Company___Marketing_Services___Designixer_Web_Design_Agency_-_Google_Chrome_10_24_2024_9_16_34_AM-removebg-preview.png);background-position: 
-  center center;background-repeat: no-repeat;background-size: contain ;height: 400px;width: 200px;margin-top: 30px;}
-.cimg4{background-image: url(../app/Best_Web_Design_Company___Marketing_Services___Designixer_Web_Design_Agency_-_Google_Chrome_10_24_2024_9_42_23_AM-removebg-preview.png);background-position: center center;background-repeat: no-repeat;background-size: contain ;height: 350px;width: 200px;
-margin-top: 0px;position: absolute;bottom: 40px;left: 10px;}
-.cimg{margin-top: 0px;position: absolute;bottom: 30px;left: 10px;}
-.ctext1{color: white;font-size: 22px;width: 100px;margin-top: 270px;margin-left: 40px;font-family: Arial, Helvetica, sans-serif;font-weight: lighter;}
+.cimg1{@apply bg-center bg-no-repeat bg-contain h-[400px] w-[200px];
+  background-image: url(../app/Best_Web_Design_Company___Marketing_Services___Designixer_Web_Design_Agency_-_Google_Chrome_10_24_2024_9_12_03_AM-removebg-preview.png);}
+.cimg2{@apply bg-center bg-no-repeat bg-contain h-[400px] w-[200px];
+
+  background-image: url(../app/Best_Web_Design_Company___Marketing_Services___Designixer_Web_Design_Agency_-_Google_Chrome_10_24_2024_9_12_10_AM-removebg-preview.png);}
+.cimg3{@apply bg-center bg-no-repeat bg-contain h-[400px] w-[200px] mt-[30px];
+  background-image: url(../app/Best_Web_Design_Company___Marketing_Services___Designixer_Web_Design_Agency_-_Google_Chrome_10_24_2024_9_16_34_AM-removebg-preview.png);}
+
+.cimg4{ @apply bg-center bg-no-repeat bg-contain absolute mt-0 h-[350px] w-[200px] bottom-[40px] left-[10px];
+  background-image: url(../app/Best_Web_Design_Company___Marketing_Services___Designixer_Web_Design_Agency_-_Google_Chrome_10_24_2024_9_42_23_AM-removebg-preview.png);}
+.cimg{@apply mt-0 absolute;
+  bottom: 30px;  /* Custom bottom value */
+  left: 10px;    /* Custom left value */}
+.ctext1{@apply text-white text-[22px] w-[100px] mt-[270px] ml-[40px] font-sans font-light;}
 
 .cards-container {
 animation: slideCards 100s infinite linear;
@@ -119,18 +121,14 @@ animation: slideCards 100s infinite linear;
   transform: translateX(-100%);
 }
 }
-.card {
-  width: 300px;/* Width of each card */
-   height: 360px;
-   margin: 10px;
-   border: 1px solid rgb(205, 190, 190);
-background: rgba(255, 255, 255, 0.1); /* 10% opaque white background */
-backdrop-filter: blur(10px);
-border-radius: 30px;
 
+/* In your global CSS file */
+.card {
+  @apply w-[300px] h-[360px] m-[10px] border border-[rgb(205,190,190)] bg-[rgba(255,255,255,0.1)] backdrop-blur-[10px] rounded-[30px];
 }
 
-@media (max-width: 767px) {
+
+/* @media (max-width: 767px) {
   .cimg1{background-image: url(../app/Best_Web_Design_Company___Marketing_Services___Designixer_Web_Design_Agency_-_Google_Chrome_10_24_2024_9_12_03_AM-removebg-preview.png);background-position: center center;
     background-repeat: no-repeat;background-size: contain ;height: 150px;width: 150px;}
     .cimg2{background-image: url(../app/Best_Web_Design_Company___Marketing_Services___Designixer_Web_Design_Agency_-_Google_Chrome_10_24_2024_9_12_10_AM-removebg-preview.png);background-position: center center;background-repeat: no-repeat;background-size: contain ;height: 150px;width: 150px;}
@@ -146,7 +144,78 @@ border-radius: 30px;
 .cimg4{top: 10px;}
 
 
+} */
+ /* In your global CSS file */
+@media (max-width: 767px) {
+  /* cimg1, cimg2, cimg3, cimg4 */
+  .cimg1, .cimg2, .cimg3, .cimg4 {
+    @apply bg-center bg-no-repeat bg-contain h-[150px] w-[150px];
+  }
+
+  /* cimg1 */
+  .cimg1 {
+    background-image: url(../app/Best_Web_Design_Company___Marketing_Services___Designixer_Web_Design_Agency_-_Google_Chrome_10_24_2024_9_12_03_AM-removebg-preview.png);
+  }
+
+  /* cimg2 */
+  .cimg2 {
+    background-image: url(../app/Best_Web_Design_Company___Marketing_Services___Designixer_Web_Design_Agency_-_Google_Chrome_10_24_2024_9_12_10_AM-removebg-preview.png);
+  }
+
+  /* cimg3 */
+  .cimg3 {
+    background-image: url(../app/Best_Web_Design_Company___Marketing_Services___Designixer_Web_Design_Agency_-_Google_Chrome_10_24_2024_9_16_34_AM-removebg-preview.png);
+    @apply top-[10px];
+  }
+
+  /* cimg4 */
+  .cimg4 {
+    background-image: url(../app/Best_Web_Design_Company___Marketing_Services___Designixer_Web_Design_Agency_-_Google_Chrome_10_24_2024_9_42_23_AM-removebg-preview.png);
+    @apply top-[10px];
+  }
+
+  /* ctext1 */
+  .ctext1 {
+    @apply text-white text-[20px] w-[100px] mt-[150px] font-sans font-light leading-normal;
+  }
+
+  /* cimg */
+  .cimg {
+    @apply mt-0 absolute bottom-[68px] left-auto;
+  }
+
+  /* card */
+  .card {
+    @apply w-[160px] h-[220px];
+  }
+
+  /* carousel */
+  .carousel {
+    @apply w-[9000px];
+  }
 }
+
+
+.contact-img { @apply bg-[url('../app/contact.png')] bg-center bg-no-repeat bg-contain h-[680px] w-[680px] }
+.watsapp { @apply bg-[url('../app/watsapp.png')] bg-center bg-no-repeat bg-contain h-[40px] w-[40px] mt-[0px] ml-[200px]}
+.linkedin { @apply bg-[url('../app/linked.webp')] bg-center bg-no-repeat bg-contain h-[70px] w-[70px] mt-[0px] absolute top-[10px] right-[200px] }
+
+.github { @apply bg-[url('../app/github.png')] bg-center bg-no-repeat bg-contain h-[40px] w-[40px] mt-[0px] absolute top-[26px] right-[300px] }
+.p1{@apply h-[300px] w-[590px] rounded-[10px] bg-[url('../app/hotel.png')] bg-center bg-no-repeat bg-cover }
+.p2{@apply h-[300px] w-[590px]  rounded-[10px] bg-[url('../app/tech.png')] bg-center bg-no-repeat bg-cover }
+.flow{@apply h-[300px] w-[250px] rounded-[10px] bg-[url('../app/dp2.png')] bg-center bg-no-repeat bg-contain absolute top-[100px] right-[190px]}
+
+.p3{@apply h-[300px] w-[590px]  rounded-[10px] bg-[url('../app/edu.png')] bg-center bg-no-repeat bg-cover }
+.p4{@apply h-[300px] w-[590px]  rounded-[10px] bg-[url('../app/jwel.png')] bg-center bg-no-repeat bg-cover }
+.p5{@apply h-[300px] w-[590px]  rounded-[10px] bg-[url('../app/resume.png')] bg-center bg-no-repeat bg-cover }
+.p6{@apply h-[300px] w-[590px]  rounded-[10px] bg-[url('../app/uri.png')] bg-center bg-no-repeat bg-cover }
+/* .p2{@apply h-[500px] w-[350px] border-2 border-black rounded-[20px] }
+.p3{@apply h-[500px] w-[350px] border-2 border-black rounded-[20px] } */
+/* .p4{@apply bg-[url('../app/hotel.png')] bg-center bg-no-repeat bg-contain h-[100px] w-[100px] }
+.p5{@apply bg-[url('../app/hotel.png')] bg-center bg-no-repeat bg-contain h-[100px] w-[100px] }
+.p6{@apply bg-[url('../app/hotel.png')] bg-center bg-no-repeat bg-contain h-[100px] w-[100px] } */
+
+
 
 
 

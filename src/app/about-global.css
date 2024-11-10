@@ -4,7 +4,7 @@
 .item{@apply ml-10 mt-0 w-[200px] mt-3 }
 .bulb{@apply bg-[url('../app/Best_Web_Design_Company___Marketing_Services___Designixer_Web_Design_Agency_-_Google_Chrome_10_24_2024_9_16_34_AM-removebg-preview.png')]
      bg-center bg-no-repeat bg-contain h-[380px] w-[380px] absolute  xl:bottom-[0px] xl:left-[850px] lg:left-[200px] lg:bottom-[290px] xxs:hidden lg:block}
-li{@apply xxs:leading-[30px]}
+li{@apply xxs:leading-[30px] }
 .java{@apply ml-[50px] mt-[15px]}
 .js{@apply bg-[url("../app/js.png")]
    bg-center bg-no-repeat bg-contain h-[60px] w-[60px] absolute lg:left-[30px] lg:top-[90px]  xxs:left-[24px]  xxs:top-[90px]}
@@ -20,51 +20,52 @@ li{@apply xxs:leading-[30px]}
 
           .next{@apply lg:ml-[45px] lg:mt-[18px] xxs:ml-[60px] xxs:mt-[20px] }
           .nextjs{@apply bg-[url("../app/next.webp")]
-               bg-center bg-no-repeat bg-contain h-[35px] w-[35px] absolute xl:left-[270px]  xl:top-[105px] lg:left-[40px] 
-               lg:top-[290px] xxs:top-[278px]}
+               bg-center bg-no-repeat bg-contain h-[35px] w-[35px] absolute xl:left-[270px]  xl:top-[110px] lg:left-[40px] 
+               lg:top-[290px] xxs:top-[278px] sm:top-[300px]}
 
                .re{@apply lg:ml-[45px] lg:mt-[12px] md:mt-[18px] md:ml-[50px] xxs:ml-[60px] xxs:mt-[10px]}
           .react{@apply bg-[url("../app/react.png")]
-               bg-center bg-no-repeat bg-contain h-[35px] w-[35px] absolute xl:left-[270px]  xl:top-[143px] 
+               bg-center bg-no-repeat bg-contain h-[35px] w-[35px] absolute xl:left-[270px]  xl:top-[147px] 
                lg:left-[40px] lg:top-[340px]
-              xxs:top-[310px]}
+              xxs:top-[310px] sm:top-[340px]}
           
           
 
                .no{@apply ml-[45px] lg:mt-[12px] xxs:ml-[54px] xxs:mt-[17px]}
                .node{@apply bg-[url("../app/node.png")]
-                    bg-center bg-no-repeat bg-contain h-[35px] w-[35px] absolute xl:left-[270px]  xl:top-[180px] lg:left-[40px] 
-                    lg:top-[380px] xxs:top-[350px]}
+                    bg-center bg-no-repeat bg-contain h-[35px] w-[35px] absolute xl:left-[270px]  xl:top-[190px] lg:left-[40px] 
+                    lg:top-[380px] xxs:top-[350px] sm:top-[390px]}
                      
 
                     .cs{@apply lg:ml-[40px]  lg:mt-[18px] xxs:ml-[60px] xxs:mt-[20px]}
                     .css{@apply bg-[url("../app/css.png")]
-                         bg-center bg-no-repeat bg-contain h-[65px] w-[65px] absolute xl:left-[500px]  xl:top-[90px] lg:left-[20px] 
+                         bg-center bg-no-repeat bg-contain h-[65px] w-[65px] absolute xl:left-[500px]  xl:top-[95px] lg:left-[20px] 
                          lg:top-[460px]  xxs:left-[30px] }       
           
                          .t{@apply lg:ml-[45px] lg:mt-[12px] xxs:ml-[60px] }
                     .tail{@apply bg-[url("../app/tail.png")]
-                         bg-center bg-no-repeat bg-contain h-[30px] w-[30px] absolute xl:left-[515px]  xl:top-[150px] lg:left-[40px]
-                          lg:top-[530px]  xxs:top-[500px] sm:top-[560px]}
+                         bg-center bg-no-repeat bg-contain h-[30px] w-[30px] absolute xl:left-[515px]  xl:top-[155px] lg:left-[40px]
+                          lg:top-[530px]  xxs:top-[500px] sm:top-[530px]}
           
                          .sh{@apply lg:ml-[45px] lg:mt-[12px]  xxs:ml-[60px] }
                          .shad{@apply bg-[url("../app/shad.png")] 
                               bg-center bg-no-repeat bg-contain h-[35px] w-[35px] absolute xl:left-[510px] 
-                               xl:top-[180px] lg:left-[40px] lg:top-[570px]} 
+                               xl:top-[190px] lg:left-[40px] lg:top-[570px] } 
 
                               .vcg{@apply ml-[40px] mt-[18px] xxs:hidden  xl:block}
                               .git{@apply bg-[url("../app/git.png")] xxs:hidden xl:block
-                                   bg-center bg-no-repeat bg-contain h-[35px] w-[35px] absolute xl:left-[750px]  xl:top-[110px] lg:left-[40px] lg:top-[560px]}
+                                   bg-center bg-no-repeat bg-contain h-[35px] w-[35px] absolute xl:left-[750px]  xl:top-[115px] lg:left-[40px] lg:top-[560px]}
                     
                                    .code{@apply ml-[45px] mt-[12px] xxs:hidden  xl:block}
                               .vs{@apply bg-[url("../app/vs.png")]
                                    bg-center bg-no-repeat bg-contain
-                                    h-[85px] w-[85px] absolute xl:left-[725px]  xl:top-[120px] lg:left-[12px] lg:top-[570px]
+                                    h-[85px] w-[85px] absolute xl:left-[725px]  xl:top-[130px] lg:left-[12px] lg:top-[570px]
                                    xxs:hidden xl:block}
                     
                                    .r{@apply ml-[45px] mt-[12px] xxs:hidden xl:block}
                                    .res{@apply bg-[url("../app/res.png")]
                                         bg-center bg-no-repeat bg-contain
                                          h-[35px] w-[35px] absolute xl:left-[755px] 
-                                         xl:top-[180px] lg:left-[40px] lg:top-[630px]
+                                         xl:top-[190px] lg:left-[40px] lg:top-[630px]
                                         xxs:hidden xl:block} 
+                                        
